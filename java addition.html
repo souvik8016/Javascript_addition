@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Addition Of Two Number</h3>
+
+<input type="number" id="myNumber1" >
+<input type="number" id="myNumber2" >
+
+<p>Click the button to get the number of the number field.</p>
+
+<button onclick="myFunction()">Submit</button>
+
+<p><strong>Note:</strong> input elements with type="number" are not supported in IE 9 and earlier versions.</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<h1 id="result"></h1>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myNumber1").value;
+  document.getElementById("demo1").innerHTML = x;
+   var y = document.getElementById("myNumber2").value;
+  document.getElementById("demo2").innerHTML = y;
+  console.log(typeof x);
+  console.log(typeof y);
+  var result = parseInt(x)+parseInt(y);
+  document.getElementById("result").innerHTML = "Addition is : "+result;
+}
+</script>
+
+</body>
+</html>
